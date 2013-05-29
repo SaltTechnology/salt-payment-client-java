@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en"
+	class="wf-proximanova-n4-active wf-proximanova-n6-active wf-active">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Core API Reference</title>
+
+<link rel="stylesheet" type="text/css" href="./core_api_assets/site.css"
+	media="screen">
+
+<script src="./core_api_assets/qframe.js"></script>
+
+
+<script src="./core_api_assets/jquery.js"></script>
+<script src="./core_api_assets/waypoints.min.js"></script>
+<script src="./core_api_assets/shared.js"></script>
+<script src="./core_api_assets/api.js"></script>
+
+</head>
+
+<body class="api-docs java">
+
+	<div id="background"></div>
+
+	<!-- header -->
+	<div id="header">
+		<div class="navigation">
+
+			<ul class="global">
+				<li><a href="http://elsewhere">Links to other stuff</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- /header -->
+
+	<!-- guide -->
+	<div id="guide" class="">
+
+		<!-- language -->
+		<div id="languages">
+			<p class="lang-title">Language</p>
+			<div class="select">
+				<div class="action">
+					<div class="dummy">
+						<p class="label">
+							<span class="ruby">Ruby</span> <span class="net">.NET</span> <span
+								class="php">PHP</span> <span class="java active">Java</span>
+						</p>
+						<div class="arrows">
+							<div class="up"></div>
+							<div class="down"></div>
+						</div>
+					</div>
+					<select>
+						<option class="language" href="/ruby">Ruby</option>
+						<option class="language" href="/net">.NET</option>
+						<option class="language" href="/php">PHP</option>
+						<option class="language" href="/java" selected="">Java</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+		<!-- reference -->
+		<div id="reference">
+			<p class="ref-title">API</p>
+
+			<ul class="ref-list">
+				<!-- basics (ref) -->
+				<li class="section active"><a class="parent viewing"
+					href="./Core_API_Reference.htm">Introduction</a></li>
+				<li class="section"><a class="parent" href="#errors">Errors</a></li>
+			</ul>
+
+			<p class="ref-title">Methods</p>
+
+			<ul class="ref-list">
+				<!-- charges (ref) -->
+				<li class="section section-charges"><a class="parent"
+					href="#charges">example1</a> <span class="children"> <a
+						class="child" href="#create_charge">child11</a> <a class="child"
+						href="#retrieve_charge">child12</a>
+				</span></li>
+
+				<!-- customers (ref) -->
+				<li class="section section-customers"><a class="parent"
+					href="#customers">example2</a> <span class="children"> <a
+						class="child" href="#create_customer">child21</a> <a class="child"
+						href="#retrieve_customer">child22</a>
+				</span></li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- /guide -->
+
+	<!-- api docs -->
+	<div id="api-docs">
+
+		<a id="top" name="top" class="section-anchor">&nbsp;</a>
+
+		<div id="methods">
+
+			<div class="method-position">
+
+				<div class="method">
+					<a id="intro" name="intro" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">
+
+							<h2>API Reference</h2>
+
+							<p>The Salt Core API is ...</p>
+
+						</div>
+						<div class="method-example" id="api-summary-example">
+
+							<h3>Libraries</h3>
+							<p>Sample code goes here</p>
+
+							<h3>API Endpoint</h3>
+							<code>https://example.com/</code>
+
+
+
+						</div>
+					</div>
+
+
+				</div>
+
+
+
+				<div class="method">
+					<a id="errors" name="errors" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">
+							<h2>Errors</h2>
+							<p>We would really prefer to not have any.</p>
+
+						</div>
+						<div class="method-example">
+
+							<div class="part">
+								<h3>HTTP Status Code Summary</h3>
+								<ul>
+									<li><strong>200</strong> OK.</li>
+								</ul>
+							</div>
+
+							<div class="part">
+								<h3>Errors</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="charges" name="charges" class="section-anchor">&nbsp;</a> <a
+						id="charges_object" name="charges_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">
+
+							<h3>Example 1</h3>
+						</div>
+					</div>
+				</div>
+
+
+
+				<a id="create_charge" name="create_charge" class="section-anchor">&nbsp;</a>
+				<div class="method-section">
+					<div class="method-description">
+
+						<h3>example 1 child 1</h3>
+
+						<p>text</p>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="customers" name="customers" class="section-anchor">&nbsp;</a>
+
+
+					<a id="customer_object" name="customer_object"
+						class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">
+
+							<h3>Example of section with JSON object sample</h3>
+
+							<div class="method-list">
+								<h6>Stuff</h6>
+								<dl class="argument-list">
+									<dt>object1</dt>
+									<dd class="">
+										<!-- Only show the parameter validation type for responses for now -->
+										descripton <em></em>
+
+
+									</dd>
+
+									<dt>object2</dt>
+									<dd class="">
+										description<em>, value is "customer"</em> <em></em>
+
+
+									</dd>
+
+								</dl>
+							</div>
+
+
+						</div>
+						<div class="method-example">
+
+							<code class="method-response">
+								<span class="CodeRay"><span class="line-numbers">
+								</span> JSON: { <span class="string"><span class="delimiter">"</span><span
+										class="content">object</span><span class="delimiter">"</span></span>:
+									<span class="string"><span class="delimiter">"</span><span
+										class="content">customer</span><span class="delimiter">"</span></span>,
+									<span class="string"><span class="delimiter">"</span><span
+										class="content">created</span><span class="delimiter">"</span></span>:
+									<span class="integer">1369403333</span>, <span class="string"><span
+										class="delimiter">"</span><span class="content">id</span><span
+										class="delimiter">"</span></span>: <span class="string"><span
+										class="delimiter">"</span><span class="content">cus_1t7oC7VVUPvGTd</span><span
+										class="delimiter">"</span></span>, <span class="string"><span
+										class="delimiter">"</span><span class="content">livemode</span><span
+										class="delimiter">"</span></span>: <span class="predefined-constant">false</span>,
+									<span class="string"><span class="delimiter">"</span><span
+										class="content">description</span><span class="delimiter">"</span></span>:
+									<span class="predefined-constant">null</span>, <span
+									class="string"><span class="delimiter">"</span><span
+										class="content">active_card</span><span class="delimiter">"</span></span>:
+									{ <span class="string"><span class="delimiter">"</span><span
+										class="content">object</span><span class="delimiter">"</span></span>:
+									<span class="string"><span class="delimiter">"</span><span
+										class="content">card</span><span class="delimiter">"</span></span>, <span
+									class="string"><span class="delimiter">"</span><span
+										class="content">last4</span><span class="delimiter">"</span></span>:
+									<span class="string"><span class="delimiter">"</span><span
+										class="content">4242</span><span class="delimiter">"</span></span>,
+									}, <span class="string"><span class="delimiter">"</span><span
+										class="content">email</span><span class="delimiter">"</span></span>:
+									<span class="predefined-constant">null</span>, <span
+									class="string"><span class="delimiter">"</span><span
+										class="content">delinquent</span><span class="delimiter">"</span></span>:
+									<span class="predefined-constant">false</span>, <span
+									class="string"><span class="delimiter">"</span><span
+										class="content">subscription</span><span class="delimiter">"</span></span>:
+									<span class="predefined-constant">null</span>, <span
+									class="string"><span class="delimiter">"</span><span
+										class="content">discount</span><span class="delimiter">"</span></span>:
+									<span class="predefined-constant">null</span>, <span
+									class="string"><span class="delimiter">"</span><span
+										class="content">account_balance</span><span class="delimiter">"</span></span>:
+									<span class="integer">0</span> }</span>
+							</code>
+
+						</div>
+					</div>
+
+
+
+					<a id="create_customer" name="create_customer"
+						class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">
+
+
+							<h3>example 2 child 1</h3>
+
+							<p>text</p>
+
+						</div>
+					</div>
+
+
+
+					<a id="retrieve_customer" name="retrieve_customer"
+						class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">
+							<h3>example 2 child 2</h3>
+
+							<p>text</p>
+
+						</div>
+					</div>
+
+
+				</div>
+				<iframe class="q-frame"
+					style="background-color: transparent; border: 0px none transparent; overflow: hidden; margin: 0px; padding: 0px; display: none;"
+					frameborder="0" allowtransparency="true"
+					src="./core_api_assets/track.htm"></iframe>
+</body>
+</html>
