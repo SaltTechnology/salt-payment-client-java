@@ -1,3 +1,4 @@
+--- layout: default ---
 <!DOCTYPE html>
 <html lang="en"
 	class="wf-proximanova-n4-active wf-proximanova-n6-active wf-active">
@@ -36,34 +37,51 @@
 
 			<ul class="ref-list">
 				<!-- basics (ref) -->
-				<li class="section active"><a class="parent viewing"
+				<li class="section section-introduction"><a class="parent viewing"
 					href="./core_ap_ref.htm">Introduction</a></li>
 				<li class="section"><a class="parent" href="#errors">Errors</a></li>
 			</ul>
 
-			<p class="ref-title">Methods</p>
-
 			<ul class="ref-list">
 				<!-- charges (ref) -->
-				<li class="section section-charges"><a class="parent"
-					href="#charges">example1</a> <span class="children"> <a
-						class="child" href="#create_charge">child11</a> <a class="child"
-						href="#retrieve_charge">child12</a>
+				<li class="section section-purchase"><a class="parent"
+					href="#purchase">Purchase</a> <span class="children"> <a
+						class="child" href="#single_purchase">Single Purchase</a> <a
+						class="child" href="#recurring_purchase">Recurring Purchase</a>
 				</span></li>
 
-				<!-- customers (ref) -->
-				<li class="section section-customers"><a class="parent"
-					href="#customers">example2</a> <span class="children"> <a
-						class="child" href="#create_customer">child21</a> <a class="child"
-						href="#retrieve_customer">child22</a>
-				</span></li>
+				<li class="section section-void"><a class="parent" href="#void">Void</a></li>
+
+				<li class="section section-refund"><a class="parent"
+					href="#refund">Refund</a></li>
+
+				<li class="section section-txn_verification"><a class="parent"
+					href="#txn_verification">Transaction Verification</a></li>
+
+				<li class="section section-cc_verification"><a class="parent"
+					href="#cc_verification">Credit Card Verification</a></li>
+
+				<li class="section section-batch"><a class="parent"
+					href="#batch">Closing a Batch</a></li>
+
+				<li class="section section-fraud"><a class="parent"
+					href="#fraud">Updating Fraud</a></li>
+
+				<li class="section section-receipts"><a class="parent"
+					href="#receipts">Receipts</a></li>
+
+				<li class="section section-security"><a class="parent"
+					href="#security">Security</a></li>
+
+				<li class="section section-secure_storage"><a class="parent"
+					href="#secure_storage">Secure Storage</a></li>
 			</ul>
 		</div>
 
 	</div>
 	<!-- /guide -->
-	
-		<div id="api-docs">
+
+	<div id="api-docs">
 
 		<a id="top" name="top" class="section-anchor">&nbsp;</a>
 
@@ -74,100 +92,142 @@
 				<div class="method">
 					<a id="intro" name="intro" class="section-anchor">&nbsp;</a>
 					<div class="method-section">
-						<div class="method-description">
-
-							{% include intro_description.html %}
-
-						</div>
-						<div class="method-example" id="api-summary-example">
-
-						</div>
+						<div class="method-description">{% include intro_description.html %}</div>
+						<div class="method-example" id="api-summary-example">{% include intro_example.html %}</div>
 					</div>
 
 
 				</div>
-
-
 
 				<div class="method">
 					<a id="errors" name="errors" class="section-anchor">&nbsp;</a>
 					<div class="method-section">
-						<div class="method-description">
-							
-
-						</div>
-						<div class="method-example">
-
-							
-						</div>
+						<div class="method-description">{% include errors_description.html %}</div>
+						<div class="method-example">{% include errors_example.html %}</div>
 					</div>
 				</div>
 
 				<div class="method">
-					<a id="charges" name="charges" class="section-anchor">&nbsp;</a> <a
-						id="charges_object" name="charges_object" class="section-anchor">&nbsp;</a>
+					<a id="purchase" name="purchase" class="section-anchor">&nbsp;</a>
+					<a id="purchase_object" name="purchase_object"
+						class="section-anchor">&nbsp;</a>
 					<div class="method-section">
-						<div class="method-description">
-
-							
-						</div>
+						<div class="method-description">Purchase</div>
+						<div class="method-example">{% include purchase_example.html %}</div>
 					</div>
 				</div>
 
-
-
-				<a id="create_charge" name="create_charge" class="section-anchor">&nbsp;</a>
+				<a id="single_purchase" name="single_purchase"
+					class="section-anchor">&nbsp;</a>
 				<div class="method-section">
-					<div class="method-description">
+					<div class="method-description">{% include single_purchase_description.html %}</div>
+					<div class="method-example">{% include single_purchase_example.html %}</div>
+				</div>
 
-						
+				<a id="recurring_purchase" name="recurring_purchase"
+					class="section-anchor">&nbsp;</a>
+				<div class="method-section">
+					<div class="method-description">{% include recurring_purchase_description.html %}</div>
+					<div class="method-example">{% include recurring_purchase_example.html %}</div>
+				</div>
+
+				<div class="method">
+					<a id="void" name="void" class="section-anchor">&nbsp;</a> <a
+						id="void_object" name="void_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include void_description.html %}</div>
+						<div class="method-example">{% include void_example.html %}
+
+						</div>
 					</div>
 				</div>
 
 				<div class="method">
-					<a id="customers" name="customers" class="section-anchor">&nbsp;</a>
-
-
-					<a id="customer_object" name="customer_object"
-						class="section-anchor">&nbsp;</a>
+					<a id="refund" name="refund" class="section-anchor">&nbsp;</a> <a
+						id="refund_object" name="refund_object" class="section-anchor">&nbsp;</a>
 					<div class="method-section">
-						<div class="method-description">
-
-							
-
-
-						</div>
-						<div class="method-example">
-
-							
-
-						</div>
+						<div class="method-description">{% include refund_description.html %}</div>
+						<div class="method-example">{% include refund_example.html %}</div>
 					</div>
-
-
-
-					<a id="create_customer" name="create_customer"
-						class="section-anchor">&nbsp;</a>
-					<div class="method-section">
-						<div class="method-description">
-
-
-						</div>
-					</div>
-
-
-
-					<a id="retrieve_customer" name="retrieve_customer"
-						class="section-anchor">&nbsp;</a>
-					<div class="method-section">
-						<div class="method-description">
-							
-
-						</div>
-					</div>
-
-
 				</div>
+
+				<div class="method">
+					<a id="txn_verification" name="txn_verification"
+						class="section-anchor">&nbsp;</a> <a id="txn_verification_object"
+						name="txn_verification_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include txn_verification_description.html %}</div>
+						<div class="method-example">{% include txn_verification_example.html %}</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="cc_verification" name="cc_verification"
+						class="section-anchor">&nbsp;</a> <a id="cc_verification_object"
+						name="cc_verification_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include cc_verification_description.html %}</div>
+						<div class="method-example">{% include cc_verification_example.html %}</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="batch" name="batch" class="section-anchor">&nbsp;</a> <a
+						id="batch_object" name="batch_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include batch_description.html %}</div>
+						<div class="method-example">{% include batch_example.html %}
+
+						</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="fraud" name="fraud" class="section-anchor">&nbsp;</a> <a
+						id="fraud_object" name="fraud_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include fraud_description.html %}</div>
+						<div class="method-example">{% include fraud_example.html %}
+
+						</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="receipts" name="receipts" class="section-anchor">&nbsp;</a>
+
+					<a id="receipts_object" name="receipts_object"
+						class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include receipts_description.html %}</div>
+						<div class="method-example">{% include receipts_example.html %}</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="security" name="security" class="section-anchor">&nbsp;</a>
+
+					<a id="security_object" name="security_object"
+						class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include security_description.html %}</div>
+						<div class="method-example">{% include security_example.html %}</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="secure_storage" name="secure_storage" class="section-anchor">&nbsp;</a>
+
+					<a id="secure_storage_object" name="secure_storage_object"
+						class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include secure_storage_description.html %}</div>
+						<div class="method-example">{% include secure_storage_example.html %}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>

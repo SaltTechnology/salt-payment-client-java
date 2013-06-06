@@ -1,0 +1,12 @@
+<p>
+CustomerProfile customerProfile = new CustomerProfile();
+customerProfile.setFirstName("firstName");
+customerProfile.setLastName("lastName");
+customerProfile.setAddress1("address1");
+customerProfile.setPostal("postal");
+customerProfile.setPhoneNumber("phone");
+		
+PaymentProfile paymentProfile = new PaymentProfile(creditCard, customerProfile);
+
+StorageReceipt receipt = httpsCreditCardService.addToStorage(storageTokenId, paymentProfile);
+</p>
