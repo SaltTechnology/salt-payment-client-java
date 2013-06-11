@@ -4,6 +4,7 @@
 Prior to making a purchase you will need to define your Merchant, CreditCard, HttpsCreditCardService, and (optionally) VerificationRequest.
 </p>
 
+<pre class="prettyprint">
 <p>
 Merchant
 	int merchantId				The ID of the merchant issuing the requests.
@@ -36,3 +37,4 @@ VerificationRequest
 	cvv2Request					indicates how to verify the CVV2. If null, then ignore the	CVV2 value of the creditCard and don't verify it.
     advancedRiskProfile			(optional)indicates how to verify the AdvancedRiskProfile. If null, then ignore the AdvancedRiskProfile specific fields and dont verify them.
 </p>
+</pre>
