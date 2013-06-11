@@ -6,25 +6,25 @@ You can use SALT’s Periodic Purchase features when the customer is billed peri
 
 <p>
 Schedule
-<br>ScheduleType scheduleType						One of MONTH, WEEK, DAY.
-<br>short intervalLength							Duration of the interval.
+<br>ScheduleType scheduleType &emsp;&emsp; One of MONTH, WEEK, DAY.
+<br>short intervalLength &emsp;&emsp; Duration of the interval.
 </p>
 <p>
 PeriodicPurchaseInfo
-<br>Long periodicTransactionId						SALT recurring purchase ID returned when the purchase was originally created.
-<br>State state										One of IN_PROGRESS, ON_HOLD, CANCELLED.  
-<br>Schedule schedule								The schedule on which to issue payments.  
-<br>Long perPaymentAmount							Payment amount in cents.
-<br>String orderId									Merchant assigned orderId.  
-<br>String customerId								Optional meta field that can be used to describe a customer.
-<br>Date startDate									The date of when to issue the first payment.  If this date is null or in the past, then the first payment will be issued immediately.  Cannot be modified after the first payment has been issued.
-<br>Date endDate									The date of when to end the payments.  A payment will not be issued if it falls on this date.  
-<br>Date nextPaymentDate							Change when the next payment will occur.  
+<br>Long periodicTransactionId &emsp;&emsp; SALT recurring purchase ID returned when the purchase was originally created.
+<br>State state &emsp;&emsp; One of IN_PROGRESS, ON_HOLD, CANCELLED.  
+<br>Schedule schedule &emsp;&emsp; The schedule on which to issue payments.  
+<br>Long perPaymentAmount &emsp;&emsp; Payment amount in cents.
+<br>String orderId &emsp;&emsp; Merchant assigned orderId.  
+<br>String customerId	 &emsp;&emsp; Optional meta field that can be used to describe a customer.
+<br>Date startDate &emsp;&emsp; The date of when to issue the first payment.  If this date is null or in the past, then the first payment will be issued immediately.  Cannot be modified after the first payment has been issued.
+<br>Date endDate &emsp;&emsp; The date of when to end the payments.  A payment will not be issued if it falls on this date.  
+<br>Date nextPaymentDate &emsp;&emsp; Change when the next payment will occur.  
 </p>
 
 <p>
 HttpsCreditCardService.recurringPurchase
-<br>PeriodicPurchaseInfo purchaseInfo				Defines periodic-specific information, such as schedule, dates, and customer ID. 			
-<br>CreditCard creditCard							CreditCard information.
-<br>VerificationRequest verificationRequest			Credit Card Verification request information, null if not used. 
+<br>PeriodicPurchaseInfo purchaseInfo &emsp;&emsp; Defines periodic-specific information, such as schedule, dates, and customer ID. 			
+<br>CreditCard creditCard &emsp;&emsp; CreditCard information.
+<br>VerificationRequest verificationRequest	 &emsp;&emsp; Credit Card Verification request information, null if not used. 
 </p>
