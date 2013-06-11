@@ -214,101 +214,6 @@ div.navigation {
 	position: relative
 }
 
-div.navigation div.signin {
-	float: right
-}
-
-div.navigation div.signin a {
-	font-size: 12px;
-	text-decoration: none;
-	padding: 1px;
-	height: 26px;
-	display: block;
-	position: relative;
-	top: -3px;
-	margin-left: 4px;
-	background: #adb2bb;
-	background: transparent;
-	background: -webkit-linear-gradient(#ccd0d6, #adb2bb);
-	background: -moz-linear-gradient(#ccd0d6, #adb2bb);
-	background: -ms-linear-gradient(#ccd0d6, #adb2bb);
-	background: -o-linear-gradient(#ccd0d6, #adb2bb);
-	background: linear-gradient(#ccd0d6, #adb2bb);
-	-webkit-border-radius: 14px;
-	-moz-border-radius: 14px;
-	-ms-border-radius: 14px;
-	-o-border-radius: 14px;
-	border-radius: 14px;
-	-webkit-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05);
-	-moz-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05);
-	-ms-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05);
-	-o-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05);
-	box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05);
-	-webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
-	-moz-transition: -moz-box-shadow 0.1s ease
-}
-
-div.navigation div.signin span {
-	display: block;
-	background: #fafbfc;
-	padding: 5px 17px;
-	height: 16px;
-	line-height: 16px;
-	font-weight: bold;
-	color: #333;
-	text-shadow: 0 1px 0 #fff;
-	background: #f6f9fc;
-	background: transparent;
-	background: -webkit-linear-gradient(#fff, #eff1f4);
-	background: -moz-linear-gradient(#fff, #eff1f4);
-	background: -ms-linear-gradient(#fff, #eff1f4);
-	background: -o-linear-gradient(#fff, #eff1f4);
-	background: linear-gradient(#fff, #eff1f4);
-	-webkit-box-shadow: inset 0 1px 0 #fff;
-	-moz-box-shadow: inset 0 1px 0 #fff;
-	-ms-box-shadow: inset 0 1px 0 #fff;
-	-o-box-shadow: inset 0 1px 0 #fff;
-	box-shadow: inset 0 1px 0 #fff;
-	-webkit-border-radius: 13px;
-	-moz-border-radius: 13px;
-	-ms-border-radius: 13px;
-	-o-border-radius: 13px;
-	border-radius: 13px
-}
-
-div.navigation div.signin a:hover {
-	background: #008cdd;
-	-webkit-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5;
-	-moz-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5;
-	-ms-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5;
-	-o-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5;
-	box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5
-}
-
-div.navigation div.signin a:active {
-	background: #008cdd;
-	-webkit-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5;
-	-moz-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5;
-	-ms-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5;
-	-o-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5;
-	box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.05), 0 0 4px #28a0e5
-}
-
-div.navigation div.signin a:active span {
-	color: #444;
-	background: transparent;
-	background: -webkit-linear-gradient(#e6e8eb, #eff1f4);
-	background: -moz-linear-gradient(#e6e8eb, #eff1f4);
-	background: -ms-linear-gradient(#e6e8eb, #eff1f4);
-	background: -o-linear-gradient(#e6e8eb, #eff1f4);
-	background: linear-gradient(#e6e8eb, #eff1f4);
-	-webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-	-ms-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-	-o-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1)
-}
-
 div.navigation ul.global {
 	float: right;
 	margin-right: 12px;
@@ -2695,7 +2600,7 @@ body.api-docs div#api-docs div#methods .method-section .method-example code .no,
 body.api-docs div#api-docs div#methods .method-section .method-example code:before
 	{
 	content: "";
-	color: #acb9bf;
+	color: #c8c8c8;
 	display: block;
 	padding-bottom: 4px
 }
@@ -2979,79 +2884,6 @@ html#blog div#header h1 a.bloglink {
 
 html#blog div#header h2 {
 	display: none
-}
-
-div.navigation div.signin.twitter a {
-	background: #015e94;
-	background: transparent;
-	background: -webkit-linear-gradient(#28a0e5, #015e94);
-	background: -moz-linear-gradient(#28a0e5, #015e94);
-	background: -ms-linear-gradient(#28a0e5, #015e94);
-	background: -o-linear-gradient(#28a0e5, #015e94);
-	background: linear-gradient(#28a0e5, #015e94);
-	-webkit-transition: -webkit-box-shadow 0.2s ease-in-out;
-	-moz-transition: -moz-box-shadow 0.2s ease;
-	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-	-ms-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-	-o-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15)
-}
-
-div.navigation div.signin.twitter a em {
-	display: block;
-	position: absolute;
-	right: 11px;
-	top: 7px;
-	width: 16px;
-	height: 14px;
-	background: url(/img/blog/twitter.png);
-	background-size: 100% 100%
-}
-
-div.navigation div.signin.twitter span {
-	padding-right: 36px;
-	position: relative;
-	color: #fff;
-	background: #017aff;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
-	background: transparent;
-	background: -webkit-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
-	background: -moz-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
-	background: -ms-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
-	background: -o-linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
-	background: linear-gradient(#7dc5ee, #008cdd 85%, #30a2e4);
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
-	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
-	-ms-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
-	-o-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25)
-}
-
-div.navigation div.signin.twitter a:hover {
-	box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.15), 0 0 6px #5695db;
-	-webkit-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.15), 0 0 6px #5695db;
-	-moz-box-shadow: 0px 1px 0 rgba(0, 0, 0, 0.15), 0 0 6px #5695db
-}
-
-div.navigation div.signin.twitter a:active {
-	background: #005d93
-}
-
-div.navigation div.signin.twitter a:active span {
-	color: #eee;
-	background: #008cdd;
-	background: transparent;
-	background: -webkit-linear-gradient(#008cdd, #008cdd 85%, #239adf);
-	background: -moz-linear-gradient(#008cdd, #008cdd 85%, #239adf);
-	background: -ms-linear-gradient(#008cdd, #008cdd 85%, #239adf);
-	background: -o-linear-gradient(#008cdd, #008cdd 85%, #239adf);
-	background: linear-gradient(#008cdd, #008cdd 85%, #239adf);
-	-webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-	-moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-	-ms-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-	-o-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1);
-	box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.1)
 }
 
 div.blog-post {
@@ -7553,9 +7385,6 @@ div#logos div.resource.help p {
 	}
 	html#blog div#header h1 a.bloglink {
 		background-image: url(/img/blog/blog@2x.png)
-	}
-	div.navigation div.signin.twitter a em {
-		background-image: url(/img/blog/twitter@2x.png)
 	}
 	div.blog-post {
 		background-image: url(/img/blog/post/center@2x.png);
