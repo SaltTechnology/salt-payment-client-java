@@ -1,1 +1,29 @@
 <h3>Recurring Purchase</h3>
+
+<p>
+You can use SALT’s Periodic Purchase features when the customer is billed periodically, or when splitting payment into a number of separate payments.
+</p>
+
+<p>
+Schedule
+	ScheduleType scheduleType						One of MONTH, WEEK, DAY.
+	short intervalLength							Duration of the interval.
+
+PeriodicPurchaseInfo
+	Long periodicTransactionId						SALT recurring purchase ID returned when the purchase was originally created.
+	State state										One of IN_PROGRESS, ON_HOLD, CANCELLED.  
+	Schedule schedule								The schedule on which to issue payments.  
+    Long perPaymentAmount							Payment amount in cents.
+    String orderId									Merchant assigned orderId.  
+    String customerId								Optional meta field that can be used to describe a customer.
+    Date startDate									The date of when to issue the first payment.  If this date is null or in the past, then the first payment will be issued immediately.  Cannot be modified after the first payment has been issued.
+    Date endDate									The date of when to end the payments.  A payment will not be issued if it falls on this date.  
+    Date nextPaymentDate							Change when the next payment will occur.  
+</p>
+
+<p>
+HttpsCreditCardService.recurringPurchase
+	PeriodicPurchaseInfo purchaseInfo				Defines periodic-specific information, such as schedule, dates, and customer ID. 			
+	CreditCard creditCard							CreditCard information.
+    VerificationRequest verificationRequest			Credit Card Verification request information, null if not used. 
+</p>

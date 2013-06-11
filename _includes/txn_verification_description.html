@@ -1,1 +1,11 @@
 <h3>Transaction Verification</h3>
+
+<p>
+In certain cases when you are unsure of the results of the transaction, such as when a transaction times out, you may need to double-check its status. You can run the verifyTransaction() method to perform this check.  This method returns a receipt containing the results of the transaction.
+</p>
+
+<p>
+HttpsCreditCardService.verifyTransaction
+	long transactionId				The SALT transactionId of the transaction to verify.
+	long transactionOrderId			The orderId assigned to the transaction.
+</p>

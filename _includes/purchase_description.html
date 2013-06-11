@@ -1,0 +1,38 @@
+<h3>Purchase</h3>
+
+<p>
+Prior to making a purchase you will need to define your Merchant, CreditCard, HttpsCreditCardService, and (optionally) VerificationRequest.
+</p>
+
+<p>
+Merchant
+	int merchantId				The ID of the merchant issuing the requests.
+	String apiToken				The API token of the merchant issuing the requests.
+	String storeId				(optional)The merchant's store ID.
+</p>
+
+<p>
+CreditCard
+	creditCardNumber			the keyed creditcard number
+    expiryDate					the keyed expiry date
+    cvv2						(optional)the cvv2 on the creditcard
+    street						(optional)the street of the creditcard holder
+    zip							(optional)the zip of the creditcard holder
+    secureCode					(optional)the optional Verified By Visa CAVV value or the MasterCard SecureCode value for cardholder authentication
+</p>
+
+<p>
+HttpsCreditCardService
+	merchantId					the id of the merchant issueing the requests
+    apiToken					the apiToken of the merchant issueing the requests
+    marketSegment				the market segment of all requests. Not null.
+    url							(optional)the creditcard gateway url to send requests to. Not null.
+    secured						(optional)true if using https, otherwise http is used
+</p>
+
+<p>
+VerificationRequest
+	avsRequest					indicates how to verify the address. If null, then ignore the address (street/zip) of the creditCard and don't verify it.
+	cvv2Request					indicates how to verify the CVV2. If null, then ignore the	CVV2 value of the creditCard and don't verify it.
+    advancedRiskProfile			(optional)indicates how to verify the AdvancedRiskProfile. If null, then ignore the AdvancedRiskProfile specific fields and dont verify them.
+</p>
