@@ -1,0 +1,16 @@
+<p>
+merchantId = [your merchantId]
+apiToken = "[your apiToken]"
+service = HttpsCreditCardService.new(merchantId, apiToken, url)
+
+creditCard = CreditCard.new('5555555555554444', '1010', '111', '123 Street', 'A1B23C');
+
+paymentProfile = PaymentProfile.new(creditCard, nil)
+
+storageToken = "my-token-010"
+receipt = service.addToStorage(storageToken, paymentProfile)
+
+puts "storage Approved: " + "#{receipt.isApproved()}"
+
+response = service.singlePurchase("stored-card-003", storageToken, "100", nil)
+</p>

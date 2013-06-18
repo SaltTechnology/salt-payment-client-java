@@ -61,12 +61,6 @@ layout: base
 				<li class="section section-cc_verification"><a class="parent"
 					href="#cc_verification">Credit Card Verification</a></li>
 
-				<li class="section section-batch"><a class="parent"
-					href="#batch">Closing a Batch</a></li>
-
-				<li class="section section-fraud"><a class="parent"
-					href="#fraud">Updating Fraud</a></li>
-
 				<li class="section section-receipts"><a class="parent"
 					href="#receipts">Receipts</a></li>
 
@@ -90,7 +84,7 @@ layout: base
 					<a id="intro" name="intro" class="section-anchor">&nbsp;</a>
 					<div class="method-section">
 						<div class="method-description">{% include intro_description.html %}</div>
-						<div class="method-example" id="api-summary-example">{% include intro_example.html %}</div>
+						<div class="method-example" id="api-summary-example">{% include intro_example_ruby.html %}</div>
 					</div>
 
 
@@ -102,7 +96,7 @@ layout: base
 						class="section-anchor">&nbsp;</a>
 					<div class="method-section">
 						<div class="method-description">{% include purchase_description.html %}</div>
-						<div class="method-example">{% include purchase_example.html %}</div>
+						<div class="method-example">{% include purchase_example_ruby.html %}</div>
 					</div>
 				</div>
 
@@ -110,14 +104,14 @@ layout: base
 					class="section-anchor">&nbsp;</a>
 				<div class="method-section">
 					<div class="method-description">{% include single_purchase_description.html %}</div>
-					<div class="method-example">{% include single_purchase_example.html %}</div>
+					<div class="method-example">{% include single_purchase_example_ruby.html %}</div>
 				</div>
 
 				<a id="recurring_purchase" name="recurring_purchase"
 					class="section-anchor">&nbsp;</a>
 				<div class="method-section">
 					<div class="method-description">{% include recurring_purchase_description.html %}</div>
-					<div class="method-example">{% include recurring_purchase_example.html %}</div>
+					<div class="method-example">{% include recurring_purchase_example_ruby.html %}</div>
 				</div>
 
 				<div class="method">
@@ -125,7 +119,7 @@ layout: base
 						id="void_object" name="void_object" class="section-anchor">&nbsp;</a>
 					<div class="method-section">
 						<div class="method-description">{% include void_description.html %}</div>
-						<div class="method-example">{% include void_example.html %}
+						<div class="method-example">{% include void_example_ruby.html %}
 
 						</div>
 					</div>
@@ -136,7 +130,7 @@ layout: base
 						id="refund_object" name="refund_object" class="section-anchor">&nbsp;</a>
 					<div class="method-section">
 						<div class="method-description">{% include refund_description.html %}</div>
-						<div class="method-example">{% include refund_example.html %}</div>
+						<div class="method-example">{% include refund_example_ruby.html %}</div>
 					</div>
 				</div>
 
@@ -146,7 +140,7 @@ layout: base
 						name="txn_verification_object" class="section-anchor">&nbsp;</a>
 					<div class="method-section">
 						<div class="method-description">{% include txn_verification_description.html %}</div>
-						<div class="method-example">{% include txn_verification_example.html %}</div>
+						<div class="method-example">{% include txn_verification_example_ruby.html %}</div>
 					</div>
 				</div>
 
@@ -156,29 +150,7 @@ layout: base
 						name="cc_verification_object" class="section-anchor">&nbsp;</a>
 					<div class="method-section">
 						<div class="method-description">{% include cc_verification_description.html %}</div>
-						<div class="method-example">{% include cc_verification_example.html %}</div>
-					</div>
-				</div>
-
-				<div class="method">
-					<a id="batch" name="batch" class="section-anchor">&nbsp;</a> <a
-						id="batch_object" name="batch_object" class="section-anchor">&nbsp;</a>
-					<div class="method-section">
-						<div class="method-description">{% include batch_description.html %}</div>
-						<div class="method-example">{% include batch_example.html %}
-
-						</div>
-					</div>
-				</div>
-
-				<div class="method">
-					<a id="fraud" name="fraud" class="section-anchor">&nbsp;</a> <a
-						id="fraud_object" name="fraud_object" class="section-anchor">&nbsp;</a>
-					<div class="method-section">
-						<div class="method-description">{% include fraud_description.html %}</div>
-						<div class="method-example">{% include fraud_example.html %}
-
-						</div>
+						<div class="method-example">{% include cc_verification_example_ruby.html %}</div>
 					</div>
 				</div>
 
@@ -189,7 +161,7 @@ layout: base
 						class="section-anchor">&nbsp;</a>
 					<div class="method-section">
 						<div class="method-description">{% include receipts_description.html %}</div>
-						<div class="method-example">{% include receipts_example.html %}</div>
+						<div class="method-example">{% include receipts_example_ruby.html %}</div>
 					</div>
 				</div>
 
@@ -200,7 +172,7 @@ layout: base
 						class="section-anchor">&nbsp;</a>
 					<div class="method-section">
 						<div class="method-description">{% include secure_storage_description.html %}</div>
-						<div class="method-example">{% include secure_storage_example.html %}</div>
+						<div class="method-example">{% include secure_storage_example_ruby.html %}</div>
 					</div>
 				</div>
 			</div>
