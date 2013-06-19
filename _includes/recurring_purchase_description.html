@@ -4,27 +4,51 @@
 You can use SALT’s Periodic Purchase features when the customer is billed periodically, or when splitting payment into a number of separate payments.
 </p>
 
-<p>
-Schedule
-<br>ScheduleType scheduleType<td>One of MONTH, WEEK, DAY.
-<br>short intervalLength<td>Duration of the interval.
-</p>
-<p>
-PeriodicPurchaseInfo
-<br>Long periodicTransactionId<td>SALT recurring purchase ID returned when the purchase was originally created.
-<br>State state<td>One of IN_PROGRESS, ON_HOLD, CANCELLED.  
-<br>Schedule schedule<td>The schedule on which to issue payments.  
-<br>Long perPaymentAmount<td>Payment amount in cents.
-<br>String orderId<td>Merchant assigned orderId.  
-<br>String customerId	<td>Optional meta field that can be used to describe a customer.
-<br>Date startDate<td>The date of when to issue the first payment.  If this date is null or in the past, then the first payment will be issued immediately.  Cannot be modified after the first payment has been issued.
-<br>Date endDate<td>The date of when to end the payments.  A payment will not be issued if it falls on this date.  
-<br>Date nextPaymentDate<td>Change when the next payment will occur.  
-</p>
+<br>
 
-<p>
-HttpsCreditCardService.recurringPurchase
-<br>PeriodicPurchaseInfo purchaseInfo<td>Defines periodic-specific information, such as schedule, dates, and customer ID. 			
-<br>CreditCard creditCard<td>CreditCard information.
-<br>VerificationRequest verificationRequest	<td>Credit Card Verification request information, null if not used. 
-</p>
+<table border="1">
+<tr>
+<th>Schedule
+<tr>
+<td>ScheduleType scheduleType<td>One of MONTH, WEEK, DAY.
+<tr>
+<td>short intervalLength<td>Duration of the interval.
+</table>
+
+<br>
+
+<table border="1">
+<tr>
+<th>PeriodicPurchaseInfo
+<tr>
+<td>Long periodicTransactionId<td>SALT recurring purchase ID returned when the purchase was originally created.
+<tr>
+<td>State state<td>One of IN_PROGRESS, ON_HOLD, CANCELLED.  
+<tr>
+<td>Schedule schedule<td>The schedule on which to issue payments.  
+<tr>
+<td>Long perPaymentAmount<td>Payment amount in cents.
+<tr>
+<td>String orderId<td>Merchant assigned orderId.  
+<tr>
+<td>String customerId	<td>Optional meta field that can be used to describe a customer.
+<tr>
+<td>Date startDate<td>The date of when to issue the first payment.  If this date is null or in the past, then the first payment will be issued immediately.  Cannot be modified after the first payment has been issued.
+<tr>
+<td>Date endDate<td>The date of when to end the payments.  A payment will not be issued if it falls on this date.  
+<tr>
+<td>Date nextPaymentDate<td>Change when the next payment will occur.  
+</table>
+
+<br>
+
+<table border="1">
+<tr>
+<th>HttpsCreditCardService.recurringPurchase
+<tr>
+<td>PeriodicPurchaseInfo purchaseInfo<td>Defines periodic-specific information, such as schedule, dates, and customer ID. 			
+<tr>
+<td>CreditCard creditCard<td>CreditCard information.
+<tr>
+<td>VerificationRequest verificationRequest	<td>Credit Card Verification request information, null if not used. 
+</table>
