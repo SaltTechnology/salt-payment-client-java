@@ -8,24 +8,41 @@ You can use SALT’s Periodic Purchase features when the customer is billed peri
 <table border="1">
 <tr>
 <th>To create a recurring payment:
+<tr>
 <td>requestCode<td>recurringPurchase
+<tr>
 <td>merchantId<td>Your merchant ID.
+<tr>
 <td>apiToken<td> Your API Token.
+<tr>
 <td>marketSegmentCode<td>I (Internet) or M (Mail/Telephone)
+<tr>
 <td>operationCode<td>create
+<tr>
 <td>amount<td>The amount of the purchase in cents.
+<tr>
 <td>periodicPurchaseStateCode<td>one of NEW(0), IN_PROGRESS(1), COMPLETE(2), ON_HOLD(3), CANCELLED(4), ERROR(5)
+<tr>
 <td>periodicPurchaseScheduleTypeCode<td>one of MONTH(0), WEEK(1), DAY(2)
+<tr>
 <td>periodicPurchaseIntervalLength<td>Duration of the interval.
+<tr>
 <td>orderId<td>Merchant assigned orderId. 
+<tr>
 <td>customerId<td>Optional meta field that can be used to describe a customer. 
+<tr>
 <td>startDate<td>The date of when to issue the first payment. If this date is null or in the past, then the first payment will be issued immediately. Cannot be modified after the first payment has been issued.
+<tr>
 <td>endDate<td>The date of when to end the payments. A payment will not be issued if it falls on this date
+<tr>
 <td>nextPaymentDate<td>Change when the next payment will occur.
+<tr>
 <td>creditCardNumber<td>The PAN of the paying credit card.
-<td>expiryDate<td>The expiry of the paying credit card in the format MMYY.
+<tr><td>expiryDate<td>The expiry of the paying credit card in the format MMYY.
 <td>storageTokenId<td>If the customer is stored in Secure Storage, you can supply this ID instead of the customer's credit card credentials.
+<tr>
 <td>avsRequestCode<td>0 or 1, Whether or not your require AVS.
+<tr>
 <td>cvv2RequestCode<td>0 or 1, Whether or not your require CVV2.
 </table>
 
