@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+ Salt Payment Client API
+ Version 1.0.0
+ http://salttechnology.github.io/core_api_doc.htm
+ 
+ Copyright (c) 2013 Salt Technology
+ Licensed under the MIT license
+ https://github.com/SaltTechnology/salt-payment-client-java/blob/master/LICENSE
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.salt.payment.client</groupId>
+        <artifactId>payment-client-java</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>payment-merchant-creditcard-java</artifactId>
+    <packaging>jar</packaging>
+    <name>${project.artifactId}</name>
+    <description>The CoreAPI CreditCard Merchant Project</description>
+
+</project>
+
