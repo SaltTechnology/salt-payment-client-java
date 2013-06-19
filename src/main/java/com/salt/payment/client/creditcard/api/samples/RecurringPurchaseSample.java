@@ -20,8 +20,8 @@ import com.salt.payment.client.creditcard.api.VerificationRequest;
  */
 public class RecurringPurchaseSample {
 
-    final private static String URL = "https://loadtest.admeris.com/platform2/gateway/processor.do";
-    final private static String API_TOKEN = "abc";
+    final private static String URL = "https://test.salt.com/gateway/creditcard/processor.do";
+    final private static String API_TOKEN = "";
     final private static int MERCHANT_ID = 300;
 
     private HttpsCreditCardService httpsCreditCardService;
