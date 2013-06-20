@@ -47,7 +47,6 @@ public final class SinglePurchaseSample {
 		CreditCardReceipt receipt = httpsCreditCardService.singlePurchase(orderId, creditCard, 1000, verificationRequest); //10 dollars
 		if (receipt != null && receipt.getTransactionId() != null){
 		    transactionId = receipt.getTransactionId();
-		    System.out.println(receipt.getResponse());
 		}
 		System.out.println(receipt.getResponse());
 	}
