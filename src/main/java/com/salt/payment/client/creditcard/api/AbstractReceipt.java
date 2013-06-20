@@ -77,7 +77,6 @@ public abstract class AbstractReceipt {
      * @param response
      *            the response from the gateway to parse. Not null.
      */
-    @SuppressWarnings("unchecked")
     public AbstractReceipt(String response) {
         if (response == null || response.length() <= 0) {
             // null response, null receipt
@@ -101,7 +100,7 @@ public abstract class AbstractReceipt {
             return;
         }
         this.params = new HashMap<String, String>();
-        for (final Entry entry : p.entrySet()) {
+        for (final Entry<Object, Object> entry : p.entrySet()) {
             this.params.put((String) entry.getKey(), (String) entry.getValue());
         }
         // parse the parameters

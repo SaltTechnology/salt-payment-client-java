@@ -4,6 +4,7 @@ import java.util.Date;
 
 import com.salt.payment.client.creditcard.api.AvsRequest;
 import com.salt.payment.client.creditcard.api.CreditCard;
+import com.salt.payment.client.creditcard.api.CreditCardReceipt;
 import com.salt.payment.client.creditcard.api.CustomerProfile;
 import com.salt.payment.client.creditcard.api.Cvv2Request;
 import com.salt.payment.client.creditcard.api.HttpsCreditCardService;
@@ -54,8 +55,8 @@ public class SecureStorageSample {
         
         //make a purchase
         VerificationRequest verificationRequest = new VerificationRequest(AvsRequest.VERIFY_STREET_AND_ZIP, Cvv2Request.CVV2_PRESENT);
-        httpsCreditCardService.singlePurchase("order id", STORAGE_TOKEN_ID, 1000, verificationRequest); //10 dollars
-        
+        CreditCardReceipt purchaseReceipt = httpsCreditCardService.singlePurchase("order id", STORAGE_TOKEN_ID, 1000, verificationRequest); //10 dollars
+        System.out.println(purchaseReceipt.getResponse());
         
         //make a recurring purchase
         Schedule schedule = new Schedule(ScheduleType.DAY, (short)5);

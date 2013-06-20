@@ -14,7 +14,6 @@ package com.salt.payment.client.creditcard.api;
  * 
  * @since JSE5
  */
-@Deprecated
 public enum MarketSegment {
     INTERNET("I"), MAIL_OR_TELEPHONE_ORDER("M"), RETAIL("G");
 

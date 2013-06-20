@@ -11,6 +11,10 @@ package com.salt.payment.client.creditcard.api;
 
 import java.math.BigDecimal;
 
+/**
+ * Not used at this time.
+ *
+ */
 public class PurchaseCardRequest {
     private String customerCode;
     private BigDecimal salesTax;

@@ -10,8 +10,7 @@
 package com.salt.payment.client.creditcard.api;
 
 /**
- * PaymentProfile = An object containing a customer's CreditCard and
- * CustomerProfile
+ * An object containing a customer's CreditCard and CustomerProfile
  */
 public class PaymentProfile {
     private CreditCard creditCard;

@@ -11,6 +11,10 @@ package com.salt.payment.client.creditcard.api;
 
 import static com.salt.payment.client.creditcard.api.CreditCardService.REQ_INVALID_REQUEST;
 
+/**
+ * Builds the server calls for debit card transactions (purchase, refund, and batch close)
+ *
+ */
 public class HttpsDebitCardService extends AbstractCreditCardService {
     // --------------------------------------------------------------------------
     // Fields

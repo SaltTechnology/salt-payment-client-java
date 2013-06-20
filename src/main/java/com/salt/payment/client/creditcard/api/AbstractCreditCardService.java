@@ -24,6 +24,7 @@ import javax.net.ssl.HttpsURLConnection;
 import static com.salt.payment.client.creditcard.api.CreditCardService.*;
 
 /**
+ * Sends an HTTPS POST request to the SALT POST API.
  * @since JSE5
  */
 public abstract class AbstractCreditCardService {

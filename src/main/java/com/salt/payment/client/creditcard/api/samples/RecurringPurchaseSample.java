@@ -51,6 +51,7 @@ public class RecurringPurchaseSample {
         CreditCardReceipt receipt = httpsCreditCardService.recurringPurchase(info, creditCard, null, verificationRequest);
         if (receipt != null && receipt.getTransactionId() != null){
             transactionId = receipt.getTransactionId();
+            System.out.println(receipt.getResponse());
         }
 
         httpsCreditCardService.executeRecurringPurchase(transactionId, "cvv");

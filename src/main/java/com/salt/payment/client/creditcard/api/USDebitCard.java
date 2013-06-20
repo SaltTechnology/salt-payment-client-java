@@ -10,7 +10,7 @@
 package com.salt.payment.client.creditcard.api;
 
 /**
- * A creditcard for making creditcard purchases.
+ * Not used at this time.
  * 
  * @immutable
  * @since JSE5

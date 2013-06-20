@@ -11,6 +11,9 @@ package com.salt.payment.client.creditcard.api;
 
 import java.util.Date;
 
+/**
+ * Not implemented at this time.
+ */
 public class LodgingRequest {
 
     public enum Field {

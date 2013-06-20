@@ -11,7 +11,13 @@ package com.salt.payment.client.creditcard.api;
 
 import java.util.Hashtable;
 
+/**
+ * Returned after any call to the Gateway.  The applicable methods will depend on the type of call made
+ *
+ */
 public class TransactionResponse {
+    
+    //the unformatted response data provided by the Gateway
     private String data;
 
     private String cardType = "";
@@ -31,9 +37,8 @@ public class TransactionResponse {
         this.format();
     }
 
-    @SuppressWarnings("unchecked")
     private void format() {
-        Hashtable ht = new Hashtable();
+        Hashtable<String, String> ht = new Hashtable<String, String>();
         String param[] = this.data.trim().split(";");
         for (int i = 0; i < param.length; i++) {
             String key[] = param[i].split("=");

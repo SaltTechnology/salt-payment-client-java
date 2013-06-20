@@ -31,7 +31,6 @@ public class DebitCardReceipt extends AbstractReceipt {
      * @param response
      *            the response from the gateway to parse. Not null.
      */
-    @SuppressWarnings("unchecked")
     public DebitCardReceipt(String response) {
         super(response);
         if (response == null || response.length() <= 0) {

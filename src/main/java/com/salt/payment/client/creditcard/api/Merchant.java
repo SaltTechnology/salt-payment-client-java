@@ -7,10 +7,6 @@
  * Licensed under the MIT license
  * https://github.com/SaltTechnology/salt-payment-client-java/blob/master/LICENSE
  ******************************************************************************/
-/*
- * Copyright 2007 Xtreme Mobility, Inc. All rights reserved.
- * XM PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- */
 package com.salt.payment.client.creditcard.api;
 
 /**

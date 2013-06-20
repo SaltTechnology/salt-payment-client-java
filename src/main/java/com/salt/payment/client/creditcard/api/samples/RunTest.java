@@ -9,7 +9,11 @@ public class RunTest {
      * @param args
      */
     public static void main(String[] args) {
-        SecureStorageSample sample = new SecureStorageSample();
+        SinglePurchaseSample singlePurchaseSample = new SinglePurchaseSample();
+        
+        SecureStorageSample storageSample = new SecureStorageSample();
+        
+        RecurringPurchaseSample recurringPurchaseSample = new RecurringPurchaseSample();
     }
 
 }
