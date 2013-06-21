@@ -8,25 +8,15 @@ Perform a single purchase.
 
 <table border="1">
 <tr>
-<th>requestCode<td>singlePurchase
+<th>Merchant
 <tr>
-<td>merchantId<td>Your merchant ID.
+<td>httpsCreditCardService.singlePurchase
 <tr>
-<td>apiToken<td> Your API Token.
+<td>String orderId	<td>Merchant assigned orderId.  Must be unique.
 <tr>
-<td>marketSegmentCode<td>I (Internet) or M (Mail/Telephone)
+<td>CreditCard creditCard<td>Credit card information.
 <tr>
-<td>orderId<td>Merchant assigned orderId. 
+<td>long amount<td>Amount of the purchase in cents.
 <tr>
-<td>creditCardNumber<td>The PAN of the paying credit card.
-<tr>
-<td>expiryDate<td>The expiry of the paying credit card in the format MMYY.
-<tr>
-<td>storageTokenId<td>If the customer is stored in Secure Storage, you can supply this ID instead of the customer's credit card credentials.
-<tr>
-<td>amount<td>The amount of the purchase in cents.
-<tr>
-<td>avsRequestCode<td>0 or 1, Whether or not you require AVS.
-<tr>
-<td>cvv2RequestCode<td>0 or 1, Whether or not you require CVV2.
+<td>VerificationRequest verificationRequest<td>Request information, null if not used.
 </table>

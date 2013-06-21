@@ -8,18 +8,13 @@ Returns funds from a previously settled purchase to the customer.  Refunds can o
 
 <table border="1">
 <tr>
-<th>requestCode<td>refund
+<th>HttpsCreditCardService.refund
 <tr>
-<td>merchantId<td>Your merchant ID.
+<td>long purchaseId	<td>The SALT transactionId of the purchase to void.
 <tr>
-<td>apiToken<td> Your API Token.
+<td>String purchaseOrderId<td>The order ID previously assigned to the purchase that is to be refunded.
 <tr>
-<td>marketSegmentCode<td>I (Internet) or M (Mail/Telephone)
+<td>String refundOrderId<td>The merchant assigned orderId to be attached to this refund request. Will be generated if null.
 <tr>
-<td>transactionId<td>The ID of the transaction you are refunding.
-<tr>
-<td>transactionOrderId<td>The order Id of the transaction you are refunding.
-<tr>
-<td>orderId<td>The merchant assigned orderId to be attached to this refund request.
-<td>amount<td>The amount of the purchase in cents.
+<td>long amount	<td>The amount to refund in cents.
 </table>

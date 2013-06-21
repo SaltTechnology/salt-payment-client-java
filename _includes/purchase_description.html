@@ -1,1 +1,67 @@
 <h3>Purchase</h3>
+
+<p>
+Prior to making a purchase you will need to define your Merchant, CreditCard, HttpsCreditCardService, and (optionally) VerificationRequest.
+</p>
+
+<br>
+
+<table border="1">
+<tr>
+<th>Merchant
+<tr>
+<td>int merchantId<td>The ID of the merchant issuing the requests.
+<tr>
+<td>String apiToken<td>The API token of the merchant issuing the requests.
+<tr>
+<td>String storeId<td>(optional)The merchant's store ID.
+</table>
+
+<br>
+
+<table border="">
+<tr>
+<th>CreditCard
+<tr>
+<td>creditCardNumber<td>the keyed creditcard number
+<tr>
+<td>expiryDate<td>the keyed expiry date
+<tr>
+<td>cvv2<td>(optional)the cvv2 on the creditcard
+<tr>
+<td>street<td>(optional)the street of the creditcard holder
+<tr>
+<td>zip	<td>(optional)the zip of the creditcard holder
+<tr>
+<td>secureCode<td>(optional)the optional Verified By Visa CAVV value or the MasterCard SecureCode value for cardholder authentication
+</table>
+
+<br>
+
+<table border="">
+<tr>
+<th>HttpsCreditCardService
+<tr>
+<td>merchantId<td>the id of the merchant issueing the requests
+<tr>
+<td>apiToken<td>the apiToken of the merchant issueing the requests
+<tr>
+<td>marketSegment<td>the market segment of all requests. Not null.
+<tr>
+<td>url	<td>(optional)the creditcard gateway url to send requests to. Not null.
+<tr>
+<td>secured	<td>(optional)true if using https, otherwise http is used
+</table>
+
+<br>
+
+<table border="">
+<tr>
+<th>VerificationRequest
+<tr>
+<td>avsRequest<td>indicates how to verify the address. If null, then ignore the address (street/zip) of the creditCard and don't verify it.
+<tr>
+<td>cvv2Request<td>indicates how to verify the CVV2. If null, then ignore the	CVV2 value of the creditCard and don't verify it.
+<tr>
+<td>advancedRiskProfile<td>(optional)indicates how to verify the AdvancedRiskProfile. If null, then ignore the AdvancedRiskProfile specific fields and dont verify them.
+</table>

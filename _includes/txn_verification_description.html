@@ -1,20 +1,16 @@
 <h3>Transaction Verification</h3>
 
 <p>
-In certain cases when you are unsure of the results of the transaction, such as when a transaction times out, you may need to double-check its status.
+In certain cases when you are unsure of the results of the transaction, such as when a transaction times out, you may need to double-check its status. You can run the verifyTransaction() method to perform this check.  This method returns a receipt containing the results of the transaction.
 </p>
 
 <br>
 
 <table border="1">
 <tr>
-<th>requestCode<td>verifyTransaction
+<th>HttpsCreditCardService.verifyTransaction
 <tr>
-<td>merchantId<td>Your merchant ID.
+<td>long transactionId<td>The SALT transactionId of the transaction to verify.
 <tr>
-<td>apiToken<td> Your API Token.
-<tr>
-<td>marketSegmentCode<td>I (Internet) or M (Mail/Telephone)
-<tr>
-<td>transactionId<td>The ID of the transaction you are verifying.
+<td>long transactionOrderId	<td>The orderId assigned to the transaction.
 </table>

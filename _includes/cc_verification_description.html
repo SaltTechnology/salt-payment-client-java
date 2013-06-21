@@ -1,26 +1,16 @@
 <h3>Credit Card Verification</h3>
 <p>
-Use a verifyCreditCard request to check the status of a credit card. The returned receipt will contain information about the card’s validity, Secure Storage information if the card uses Secure Storage and Fraud information if the card uses the Advanced Fraud Suite.
+Use the verifyCreditCard() method to check the status of a credit card. A CreditCardReceipt object is returned, containing information about the card’s validity, Secure Storage information if the card uses Secure Storage and Fraud information if the card uses the Advanced Fraud Suite.
 </p>
 
 <br>
 
 <table border="1">
 <tr>
-<td>requestCode<td>verifyCreditCard
+<th>HttpsCreditCardService.verifyCreditCard
 <tr>
-<td>merchantId<td>Your merchant ID.
+<td>CreditCard creditCard<td>CreditCard information.
 <tr>
-<td>apiToken<td> Your API Token.
-<tr>
-<td>marketSegmentCode<td>I (Internet) or M (Mail/Telephone)
-<tr>
-<td>creditCardNumber<td>The PAN of the paying credit card.
-<tr>
-<td>expiryDate<td>The expiry of the paying credit card in the format MMYY.
-<tr>
-<td>avsRequestCode<td>0 or 1, Whether or not your require AVS.
-<tr>
-<td>cvv2RequestCode<td>0 or 1, Whether or not your require CVV2.
+<td>VerificationRequest verificationRequest<td>Credit Card Verification request information.
 </tr>
 </table>
