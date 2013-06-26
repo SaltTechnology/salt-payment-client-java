@@ -1,18 +1,11 @@
 package com.salt.payment.client.creditcard.sample;
 
-import java.util.Date;
-
-import com.salt.payment.client.creditcard.api.AvsRequest;
-import com.salt.payment.client.creditcard.api.CreditCard;
-import com.salt.payment.client.creditcard.api.CreditCardReceipt;
-import com.salt.payment.client.creditcard.api.Cvv2Request;
-import com.salt.payment.client.creditcard.api.HttpsCreditCardService;
-import com.salt.payment.client.creditcard.api.Merchant;
-import com.salt.payment.client.creditcard.api.PeriodicPurchaseInfo;
+import com.salt.payment.client.creditcard.api.*;
 import com.salt.payment.client.creditcard.api.PeriodicPurchaseInfo.Schedule;
 import com.salt.payment.client.creditcard.api.PeriodicPurchaseInfo.ScheduleType;
 import com.salt.payment.client.creditcard.api.PeriodicPurchaseInfo.State;
-import com.salt.payment.client.creditcard.api.VerificationRequest;
+
+import java.util.Date;
 
 /**
  * Recurring payments are useful when your customer is billed periodically, or when splitting payment into a number of separate payments.
@@ -30,6 +23,11 @@ public class RecurringPurchaseSample {
 
     private final String orderId = "orderid";
     private long transactionId = -1;
+
+    public static void main(String []args){
+        System.out.println("Running Recuuring Purchase");
+        RecurringPurchaseSample recurringPurchaseSample = new RecurringPurchaseSample();
+    }
 
     public RecurringPurchaseSample(){
         Merchant merchant = new Merchant(MERCHANT_ID, API_TOKEN);

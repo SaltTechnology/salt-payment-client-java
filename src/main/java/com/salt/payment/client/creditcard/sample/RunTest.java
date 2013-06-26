@@ -11,6 +11,7 @@ public class RunTest {
      * @param args
      */
     public static void main(String[] args) {
+        System.out.println("Running run test");
         SinglePurchaseSample singlePurchaseSample = new SinglePurchaseSample();
 
         SecureStorageSample storageSample = new SecureStorageSample();

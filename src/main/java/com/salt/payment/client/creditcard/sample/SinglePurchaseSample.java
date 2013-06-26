@@ -1,12 +1,6 @@
 package com.salt.payment.client.creditcard.sample;
 
-import com.salt.payment.client.creditcard.api.AvsRequest;
-import com.salt.payment.client.creditcard.api.CreditCard;
-import com.salt.payment.client.creditcard.api.CreditCardReceipt;
-import com.salt.payment.client.creditcard.api.Cvv2Request;
-import com.salt.payment.client.creditcard.api.HttpsCreditCardService;
-import com.salt.payment.client.creditcard.api.Merchant;
-import com.salt.payment.client.creditcard.api.VerificationRequest;
+import com.salt.payment.client.creditcard.api.*;
 
 /**
  * Performs a single purchase.
@@ -28,7 +22,12 @@ public final class SinglePurchaseSample {
 	private final String refundOrderId = "refundid";
 	
 	private long transactionId = -1;
-	
+
+
+    public static void main(String[] args) {
+        SinglePurchaseSample singlePurchaseSample = new SinglePurchaseSample();
+    }
+
 	public SinglePurchaseSample(){
 		Merchant merchant = new Merchant(MERCHANT_ID, API_TOKEN);
 		httpsCreditCardService = new HttpsCreditCardService(merchant, URL);

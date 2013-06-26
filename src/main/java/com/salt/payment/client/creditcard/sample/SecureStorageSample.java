@@ -1,21 +1,11 @@
 package com.salt.payment.client.creditcard.sample;
 
-import java.util.Date;
-
-import com.salt.payment.client.creditcard.api.AvsRequest;
-import com.salt.payment.client.creditcard.api.CreditCard;
-import com.salt.payment.client.creditcard.api.CreditCardReceipt;
-import com.salt.payment.client.creditcard.api.CustomerProfile;
-import com.salt.payment.client.creditcard.api.Cvv2Request;
-import com.salt.payment.client.creditcard.api.HttpsCreditCardService;
-import com.salt.payment.client.creditcard.api.Merchant;
-import com.salt.payment.client.creditcard.api.PaymentProfile;
-import com.salt.payment.client.creditcard.api.PeriodicPurchaseInfo;
+import com.salt.payment.client.creditcard.api.*;
 import com.salt.payment.client.creditcard.api.PeriodicPurchaseInfo.Schedule;
 import com.salt.payment.client.creditcard.api.PeriodicPurchaseInfo.ScheduleType;
 import com.salt.payment.client.creditcard.api.PeriodicPurchaseInfo.State;
-import com.salt.payment.client.creditcard.api.StorageReceipt;
-import com.salt.payment.client.creditcard.api.VerificationRequest;
+
+import java.util.Date;
 
 /**
  * When a user is added to secure storage, we can retrieve their credit card/personal info from there
@@ -30,6 +20,10 @@ public class SecureStorageSample {
 
     private HttpsCreditCardService httpsCreditCardService;
     private CreditCard creditCard;
+
+    public static void main(String []args){
+        SecureStorageSample secureStorageSample = new SecureStorageSample();
+    }
 
     public SecureStorageSample(){
 
