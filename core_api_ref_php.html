@@ -1,0 +1,184 @@
+---
+layout: base
+---
+<!DOCTYPE html>
+<html lang="en"
+	class="wf-proximanova-n4-active wf-proximanova-n6-active wf-active">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Core API Reference</title>
+
+<link rel="stylesheet" type="text/css" href="./core_api_assets/site.css"
+	media="screen">
+</head>
+
+<body class="api-docs java">
+
+	<div id="background"></div>
+
+	<!-- header -->
+	<div id="header">
+		<div class="navigation">
+
+			<ul class="global">
+				<li><a href="http://salt.com">Salt.com</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- /header -->
+
+	<!-- guide -->
+	<div id="guide" class="">
+
+		<!-- reference -->
+		<div id="reference">
+			<p class="ref-title">API</p>
+
+			<ul class="ref-list">
+				<!-- basics (ref) -->
+				<li class="section section-introduction"><a class="parent"
+					href="./core_ap_ref.htm">Introduction</a></li>
+			</ul>
+
+			<ul class="ref-list">
+				<!-- charges (ref) -->
+				<li class="section section-purchase"><a class="parent"
+					href="#purchase">Purchase</a> <span class="children"> <a
+						class="child" href="#single_purchase">Single Purchase</a> <a
+						class="child" href="#recurring_purchase">Recurring Purchase</a>
+				</span></li>
+
+				<li class="section section-void"><a class="parent" href="#void">Void</a></li>
+
+				<li class="section section-refund"><a class="parent"
+					href="#refund">Refund</a></li>
+
+				<li class="section section-txn_verification"><a class="parent"
+					href="#txn_verification">Transaction Verification</a></li>
+
+				<li class="section section-cc_verification"><a class="parent"
+					href="#cc_verification">Credit Card Verification</a></li>
+
+				<li class="section section-receipts"><a class="parent"
+					href="#receipts">Receipts</a></li>
+
+				<li class="section section-secure_storage"><a class="parent"
+					href="#secure_storage">Secure Storage</a></li>
+			</ul>
+		</div>
+
+	</div>
+	<!-- /guide -->
+
+	<div id="api-docs">
+
+		<a id="top" name="top" class="section-anchor">&nbsp;</a>
+
+		<div id="methods">
+
+			<div class="method-position">
+
+				<div class="method">
+					<a id="intro" name="intro" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include intro_description.html %}</div>
+						<div class="method-example" id="api-summary-example">{% include intro_example_php.html %}</div>
+					</div>
+
+
+				</div>
+
+				<div class="method">
+					<a id="purchase" name="purchase" class="section-anchor">&nbsp;</a>
+					<a id="purchase_object" name="purchase_object"
+						class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include purchase_description.html %}</div>
+						<div class="method-example">{% include purchase_example_php.html %}</div>
+					</div>
+				</div>
+
+				<a id="single_purchase" name="single_purchase"
+					class="section-anchor">&nbsp;</a>
+				<div class="method-section">
+					<div class="method-description">{% include single_purchase_description.html %}</div>
+					<div class="method-example">{% include single_purchase_example_php.html %}</div>
+				</div>
+
+				<a id="recurring_purchase" name="recurring_purchase"
+					class="section-anchor">&nbsp;</a>
+				<div class="method-section">
+					<div class="method-description">{% include recurring_purchase_description.html %}</div>
+					<div class="method-example">{% include recurring_purchase_example_php.html %}</div>
+				</div>
+
+				<div class="method">
+					<a id="void" name="void" class="section-anchor">&nbsp;</a> <a
+						id="void_object" name="void_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include void_description.html %}</div>
+						<div class="method-example">{% include void_example_php.html %}
+
+						</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="refund" name="refund" class="section-anchor">&nbsp;</a> <a
+						id="refund_object" name="refund_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include refund_description.html %}</div>
+						<div class="method-example">{% include refund_example_php.html %}</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="txn_verification" name="txn_verification"
+						class="section-anchor">&nbsp;</a> <a id="txn_verification_object"
+						name="txn_verification_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include txn_verification_description.html %}</div>
+						<div class="method-example">{% include txn_verification_example_php.html %}</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="cc_verification" name="cc_verification"
+						class="section-anchor">&nbsp;</a> <a id="cc_verification_object"
+						name="cc_verification_object" class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include cc_verification_description.html %}</div>
+						<div class="method-example">{% include cc_verification_example_php.html %}</div>
+					</div>
+				</div>
+
+
+				<div class="method">
+					<a id="receipts" name="receipts" class="section-anchor">&nbsp;</a>
+
+					<a id="receipts_object" name="receipts_object"
+						class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include receipts_description.html %}</div>
+						<div class="method-example">{% include receipts_example_php.html %}</div>
+					</div>
+				</div>
+
+				<div class="method">
+					<a id="secure_storage" name="secgit puure_storage" class="section-anchor">&nbsp;</a>
+
+					<a id="secure_storage_object" name="secure_storage_object"
+						class="section-anchor">&nbsp;</a>
+					<div class="method-section">
+						<div class="method-description">{% include secure_storage_description.html %}</div>
+						<div class="method-example">{% include secure_storage_example_php.html %}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

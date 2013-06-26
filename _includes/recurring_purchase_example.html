@@ -1,0 +1,6 @@
+<p>
+Schedule schedule = new Schedule(ScheduleType.DAY, (short)5);     
+PeriodicPurchaseInfo info = new PeriodicPurchaseInfo(0L, State.NEW, schedule, 1000L, orderId, "customer id", new Date(), new Date(), new Date());      
+CreditCardReceipt receipt = httpsCreditCardService.recurringPurchase(info, creditCard, null, verificationRequest);
+httpsCreditCardService.executeRecurringPurchase(transactionId, "cvv");
+</p>

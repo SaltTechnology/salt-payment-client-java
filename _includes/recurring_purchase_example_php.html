@@ -1,0 +1,7 @@
+<p>
+// recur schedule (in this example, every 2 weeks)
+$schedule = new Schedule(WEEK, 2);
+
+// Note that date format is 'yymmdd'
+$receipt = $service->recurringPurchase('recurring-001', $creditCard, '1000', '091010', '091210', $schedule, null);
+</p>

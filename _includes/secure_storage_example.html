@@ -1,0 +1,16 @@
+<p>
+CustomerProfile customerProfile = new CustomerProfile();
+customerProfile.setFirstName("firstName");
+customerProfile.setLastName("lastName");
+customerProfile.setAddress1("address1");
+customerProfile.setPostal("postal");
+customerProfile.setPhoneNumber("phone");
+		
+PaymentProfile paymentProfile = new PaymentProfile(creditCard, customerProfile);
+
+StorageReceipt receipt = httpsCreditCardService.addToStorage(storageTokenId, paymentProfile);
+
+//make a purchase
+VerificationRequest verificationRequest = new VerificationRequest(AvsRequest.VERIFY_STREET_AND_ZIP, Cvv2Request.CVV2_PRESENT);
+httpsCreditCardService.singlePurchase("order id", STORAGE_TOKEN_ID, 1000, verificationRequest); //10 dollars
+</p>

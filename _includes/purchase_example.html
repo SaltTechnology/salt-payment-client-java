@@ -1,0 +1,5 @@
+Merchant merchant = new Merchant(MERCHANT_ID, API_TOKEN);
+httpsCreditCardService = new HttpsCreditCardService(merchant, URL);
+creditCard = new CreditCard(4444444444444444L, (short)1231);
+		
+verificationRequest = new VerificationRequest(AvsRequest.VERIFY_STREET_AND_ZIP, Cvv2Request.CVV2_PRESENT);

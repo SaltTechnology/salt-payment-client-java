@@ -1,0 +1,20 @@
+<h3>Refund</h3>
+
+<p>
+Returns funds from a previously settled purchase to the customer.  Refunds can only be performed on a purchase that is part of an already-closed batch.
+</p>
+
+<br>
+
+<table border="1">
+<tr>
+<th>HttpsCreditCardService.refund
+<tr>
+<td>long purchaseId	<td>The SALT transactionId of the purchase to void.
+<tr>
+<td>String purchaseOrderId<td>The order ID previously assigned to the purchase that is to be refunded.
+<tr>
+<td>String refundOrderId<td>The merchant assigned orderId to be attached to this refund request. Will be generated if null.
+<tr>
+<td>long amount	<td>The amount to refund in cents.
+</table>
