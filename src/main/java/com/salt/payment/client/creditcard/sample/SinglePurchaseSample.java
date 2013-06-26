@@ -1,4 +1,4 @@
-package com.salt.payment.client.creditcard.api.samples;
+package com.salt.payment.client.creditcard.sample;
 
 import com.salt.payment.client.creditcard.api.AvsRequest;
 import com.salt.payment.client.creditcard.api.CreditCard;

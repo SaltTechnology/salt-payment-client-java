@@ -1,4 +1,4 @@
-package com.salt.payment.client.creditcard.api.samples;
+package com.salt.payment.client.creditcard.sample;
 
 /**
  * Just a main method to run the other Sample classes from.
