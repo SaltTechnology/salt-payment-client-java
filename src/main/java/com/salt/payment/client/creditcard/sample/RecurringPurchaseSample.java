@@ -11,41 +11,35 @@ import java.util.Date;
  * Recurring payments are useful when your customer is billed periodically, or when splitting payment into a number of separate payments.
  *
  */
-public class RecurringPurchaseSample {
+public class RecurringPurchaseSample extends AbstractSample {
 
-    final private static String URL = "https://test.salt.com/gateway/creditcard/processor.do";
-    final private static String API_TOKEN = "";
-    final private static int MERCHANT_ID = 300;
-
-    private HttpsCreditCardService httpsCreditCardService;
-    private CreditCard creditCard;
-    private VerificationRequest verificationRequest;
-
-    private final String orderId = "orderid";
     private long transactionId = -1;
 
     public static void main(String []args){
         System.out.println("Running Recuuring Purchase");
-        RecurringPurchaseSample recurringPurchaseSample = new RecurringPurchaseSample();
+        com.salt.payment.client.creditcard.sample.RecurringPurchaseSample recurringPurchaseSample = new com.salt.payment.client.creditcard.sample.RecurringPurchaseSample();
     }
 
     public RecurringPurchaseSample(){
-        Merchant merchant = new Merchant(MERCHANT_ID, API_TOKEN);
-        httpsCreditCardService = new HttpsCreditCardService(merchant, URL);
+
+        retrieveMerchantKeys();
+
+        Merchant merchant = new Merchant(merchantId, apiToken);
+        httpsCreditCardService = new HttpsCreditCardService(merchant, url);
         creditCard = new CreditCard(4242424242424242L, (short)1231);
 
         verificationRequest = new VerificationRequest(AvsRequest.VERIFY_STREET_AND_ZIP, Cvv2Request.CVV2_PRESENT);
-        
+
         sampleRecurringPurchaseTransaction();
     }
 
     public void sampleRecurringPurchaseTransaction(){
         Schedule schedule = new Schedule(ScheduleType.DAY, (short)5);
-        
+
         //periodic transaction ID is used only when repeating existing purchases, not applicable to new recurring purchases
         PeriodicPurchaseInfo info = new PeriodicPurchaseInfo(0L, State.NEW, schedule, 1000L, orderId, "customer id", new Date(), new Date(), new Date());
-        
-        //supply CreditCard or storage token ID - in this case we are not using secure storage so using CreditCard 
+
+        //supply CreditCard or storage token ID - in this case we are not using secure storage so using CreditCard
         CreditCardReceipt receipt = httpsCreditCardService.recurringPurchase(info, creditCard, null, verificationRequest);
         if (receipt != null && receipt.getTransactionId() != null){
             transactionId = receipt.getTransactionId();
