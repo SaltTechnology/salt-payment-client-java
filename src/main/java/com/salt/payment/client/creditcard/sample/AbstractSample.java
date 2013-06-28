@@ -24,7 +24,7 @@ public abstract class AbstractSample {
     protected String apiToken;
     protected String storageTokenId;
     protected int merchantId;
-    protected String refundOrderId = "refundid";
+    protected String refundOrderId;
 
     protected String orderId;
 
@@ -33,10 +33,11 @@ public abstract class AbstractSample {
     protected VerificationRequest verificationRequest;
 
     public AbstractSample(){
+        retrieveMerchantKeys();
+
         Merchant merchant = new Merchant(merchantId, apiToken);
 
         httpsCreditCardService = new HttpsCreditCardService(merchant, url);
-
     }
 
     protected void retrieveMerchantKeys() {
@@ -50,7 +51,8 @@ public abstract class AbstractSample {
             merchantId = Integer.parseInt(merchantProp.getProperty("merchant.Id"));
             storageTokenId = merchantProp.getProperty("merchant.storageToken");
             orderId = merchantProp.getProperty("merchant.orderId");
-            url = merchantProp.getProperty("merchant.gateway.ur");
+            url = merchantProp.getProperty("sold.gateway.ur");
+            refundOrderId = merchantProp.getProperty("refund.OrderId");
 
         } catch (Exception e) {
             throw new IllegalStateException(e);
