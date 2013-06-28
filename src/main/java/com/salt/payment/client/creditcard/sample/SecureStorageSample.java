@@ -14,7 +14,7 @@ import java.util.Date;
 public class SecureStorageSample extends AbstractSample{
 
     public static void main(String []args){
-        com.salt.payment.client.creditcard.sample.SecureStorageSample secureStorageSample = new com.salt.payment.client.creditcard.sample.SecureStorageSample();
+        SecureStorageSample secureStorageSample = new SecureStorageSample();
     }
 
     public SecureStorageSample(){

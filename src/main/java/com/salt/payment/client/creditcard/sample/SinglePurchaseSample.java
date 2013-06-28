@@ -14,7 +14,7 @@ public class SinglePurchaseSample extends AbstractSample{
 
 
     public static void main(String[] args) {
-        com.salt.payment.client.creditcard.sample.SinglePurchaseSample singlePurchaseSample = new com.salt.payment.client.creditcard.sample.SinglePurchaseSample();
+        SinglePurchaseSample singlePurchaseSample = new SinglePurchaseSample();
     }
 
     public SinglePurchaseSample(){

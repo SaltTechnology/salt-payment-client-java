@@ -17,7 +17,7 @@ public class RecurringPurchaseSample extends AbstractSample {
 
     public static void main(String []args){
         System.out.println("Running Recuuring Purchase");
-        com.salt.payment.client.creditcard.sample.RecurringPurchaseSample recurringPurchaseSample = new com.salt.payment.client.creditcard.sample.RecurringPurchaseSample();
+        RecurringPurchaseSample recurringPurchaseSample = new RecurringPurchaseSample();
     }
 
     public RecurringPurchaseSample(){
