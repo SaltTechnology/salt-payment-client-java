@@ -15,6 +15,7 @@ public class SecureStorageSample extends AbstractSample{
 
     public static void main(String []args){
         SecureStorageSample secureStorageSample = new SecureStorageSample();
+        secureStorageSample.makeSecureStorage();
     }
 
     public SecureStorageSample(){
@@ -24,6 +25,10 @@ public class SecureStorageSample extends AbstractSample{
         httpsCreditCardService = new HttpsCreditCardService(merchant, url);
         creditCard = new CreditCard(4242424242424242L, (short)1231);
 
+
+    }
+
+    public void makeSecureStorage(){
         CustomerProfile customerProfile = new CustomerProfile();
         customerProfile.setFirstName("firstName");
         customerProfile.setLastName("lastName");

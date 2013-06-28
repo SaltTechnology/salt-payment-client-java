@@ -15,11 +15,15 @@ public class SinglePurchaseSample extends AbstractSample{
 
     public static void main(String[] args) {
         SinglePurchaseSample singlePurchaseSample = new SinglePurchaseSample();
+        singlePurchaseSample.makeSinglePurchase();
     }
 
     public SinglePurchaseSample(){
         Merchant merchant = new Merchant(merchantId, apiToken);
         httpsCreditCardService = new HttpsCreditCardService(merchant, url);
+    }
+
+    public void makeSinglePurchase(){
         creditCard = new CreditCard(4242424242424242L, (short)1231);
 
         verificationRequest = new VerificationRequest(AvsRequest.VERIFY_STREET_AND_ZIP, Cvv2Request.CVV2_PRESENT);

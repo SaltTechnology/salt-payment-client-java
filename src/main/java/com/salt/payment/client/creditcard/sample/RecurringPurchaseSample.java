@@ -16,12 +16,15 @@ public class RecurringPurchaseSample extends AbstractSample {
     private long transactionId = -1;
 
     public static void main(String []args){
-        System.out.println("Running Recuuring Purchase");
         RecurringPurchaseSample recurringPurchaseSample = new RecurringPurchaseSample();
+        recurringPurchaseSample.makeRecurringPurchase();
     }
 
     public RecurringPurchaseSample(){
 
+    }
+
+    public void makeRecurringPurchase(){
         retrieveMerchantKeys();
 
         Merchant merchant = new Merchant(merchantId, apiToken);
