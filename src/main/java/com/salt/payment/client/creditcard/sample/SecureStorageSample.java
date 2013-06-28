@@ -18,17 +18,9 @@ public class SecureStorageSample extends AbstractSample{
         secureStorageSample.makeSecureStorage();
     }
 
-    public SecureStorageSample(){
-
-        Merchant merchant = new Merchant(merchantId, apiToken);
-
-        httpsCreditCardService = new HttpsCreditCardService(merchant, url);
+    public void makeSecureStorage(){
         creditCard = new CreditCard(4242424242424242L, (short)1231);
 
-
-    }
-
-    public void makeSecureStorage(){
         CustomerProfile customerProfile = new CustomerProfile();
         customerProfile.setFirstName("firstName");
         customerProfile.setLastName("lastName");

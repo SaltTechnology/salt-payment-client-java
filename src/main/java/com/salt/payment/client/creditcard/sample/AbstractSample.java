@@ -11,6 +11,7 @@ package com.salt.payment.client.creditcard.sample;
 
 import com.salt.payment.client.creditcard.api.CreditCard;
 import com.salt.payment.client.creditcard.api.HttpsCreditCardService;
+import com.salt.payment.client.creditcard.api.Merchant;
 import com.salt.payment.client.creditcard.api.VerificationRequest;
 
 import java.lang.*;
@@ -23,12 +24,20 @@ public abstract class AbstractSample {
     protected String apiToken;
     protected String storageTokenId;
     protected int merchantId;
+    protected String refundOrderId = "refundid";
 
     protected String orderId;
 
     protected HttpsCreditCardService httpsCreditCardService;
     protected CreditCard creditCard;
     protected VerificationRequest verificationRequest;
+
+    public AbstractSample(){
+        Merchant merchant = new Merchant(merchantId, apiToken);
+
+        httpsCreditCardService = new HttpsCreditCardService(merchant, url);
+
+    }
 
     protected void retrieveMerchantKeys() {
         Properties merchantProp = new Properties();
