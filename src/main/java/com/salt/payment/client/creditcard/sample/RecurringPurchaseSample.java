@@ -22,7 +22,6 @@ public class RecurringPurchaseSample extends AbstractSample {
 
     public void makeRecurringPurchase(){
         creditCard = new CreditCard(4242424242424242L, (short)1231);
-        retrieveMerchantKeys();
 
         verificationRequest = new VerificationRequest(AvsRequest.VERIFY_STREET_AND_ZIP, Cvv2Request.CVV2_PRESENT);
 
