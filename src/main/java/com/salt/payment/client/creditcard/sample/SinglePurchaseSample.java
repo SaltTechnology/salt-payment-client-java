@@ -7,11 +7,7 @@ import com.salt.payment.client.creditcard.api.*;
  *
  */
 public class SinglePurchaseSample extends AbstractSample{
-    //this ID is assing to a refund request by the merchant
-    private final String refundOrderId = "refundid";
-
     private long transactionId = -1;
-
 
     public static void main(String[] args) {
         SinglePurchaseSample singlePurchaseSample = new SinglePurchaseSample();
