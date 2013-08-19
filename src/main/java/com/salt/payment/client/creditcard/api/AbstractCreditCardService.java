@@ -553,7 +553,6 @@ public abstract class AbstractCreditCardService {
                 c.setReadTimeout(remainingTimeMsAfterSend);
                 final String respStr =
                         Utils.copyToString(new InputStreamReader(c.getInputStream()));
-                System.out.println(respStr);
                 this.afterReceivingResponse(respStr);
                 return new SendResult(respStr, null, null, null);
             } catch (final Exception e) {

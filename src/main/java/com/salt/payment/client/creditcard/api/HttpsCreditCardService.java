@@ -951,17 +951,20 @@ public final class HttpsCreditCardService extends AbstractCreditCardService impl
         return this.send(req);
     }
 
-    public CreditCardReceipt verifyTransaction(long transactionId, String transactionOrderId) {
-        if (transactionOrderId == null) {
-            return new CreditCardReceipt(REQ_INVALID_REQUEST, "transactionOrderId is required",
-                    null);
+    public CreditCardReceipt verifyTransaction(Long transactionId, String transactionOrderId) {
+        if (transactionOrderId == null && transactionId == null) {
+            return new CreditCardReceipt(REQ_INVALID_REQUEST, "at least one of transactionId or transactionOrderId is required", null);
         }
         // create the request string
         final StringBuilder req = new StringBuilder();
         try {
             this.appendHeader(req, "verifyTransaction");
-            this.appendTransactionId(req, transactionId);
-            this.appendTransactionOrderId(req, transactionOrderId);
+            if (transactionId != null) {
+                this.appendTransactionId(req, transactionId);
+            } 
+            if (transactionOrderId != null) {
+                this.appendTransactionOrderId(req, transactionOrderId);
+            }
         } catch (Exception e) {
             return new CreditCardReceipt(REQ_INVALID_REQUEST, e.toString(), null);
         }
@@ -969,29 +972,11 @@ public final class HttpsCreditCardService extends AbstractCreditCardService impl
     }
 
     public CreditCardReceipt verifyTransaction(long transactionId) {
-        final StringBuilder req = new StringBuilder();
-        try {
-            this.appendHeader(req, "verifyTransaction");
-            this.appendTransactionId(req, transactionId);
-        } catch (Exception e) {
-            return new CreditCardReceipt(REQ_INVALID_REQUEST, e.toString(), null);
-        }
-        return this.send(req);
+        return this.verifyTransaction(transactionId, null);
     }
 
     public CreditCardReceipt verifyTransaction(String transactionOrderId) {
-        if (transactionOrderId == null) {
-            return new CreditCardReceipt(REQ_INVALID_REQUEST, "transactionOrderId is required",
-                    null);
-        }
-        final StringBuilder req = new StringBuilder();
-        try {
-            this.appendHeader(req, "verifyTransaction");
-            this.appendTransactionOrderId(req, transactionOrderId);
-        } catch (Exception e) {
-            return new CreditCardReceipt(REQ_INVALID_REQUEST, e.toString(), null);
-        }
-        return this.send(req);
+        return this.verifyTransaction(null, transactionOrderId);
     }
 
     public StorageReceipt addToStorage(String storageTokenId, PaymentProfile paymentProfile) {

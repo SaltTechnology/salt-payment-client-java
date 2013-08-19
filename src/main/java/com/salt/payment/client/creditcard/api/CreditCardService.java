@@ -614,7 +614,7 @@ public interface CreditCardService {
      *            be voided. This is an extra check.
      * @return the verification receipt
      */
-    public CreditCardReceipt verifyTransaction(long transactionId, String transactionOrderId);
+    public CreditCardReceipt verifyTransaction(Long transactionId, String transactionOrderId);
 
     /**
      * Adds a payment profile to secure storage
